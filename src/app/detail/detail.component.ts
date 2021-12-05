@@ -33,7 +33,6 @@ export class DetailComponent implements OnInit {
             comment,
             user: findUserById,
           };
-          console.log('~ dataPostWithComment', this.postDetail);
         })
       });
     })
