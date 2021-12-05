@@ -1,1 +1,22 @@
-<p>profile works!</p>
+<div class="container mt-5">
+  <app-header></app-header>
+  <div class="w-50 m-auto pt-5">
+    <i class="fa fa-arrow-left" aria-hidden="true" (click)="back()"></i> &nbsp;
+      <div class="row py-2 mt-3">
+        <div class="col-3">Username : </div>
+        <div class="col">{{ user.username }}</div>
+      </div>
+      <div class="row py-2">
+        <div class="col-3">Email : </div>
+        <div class="col">{{ user.email }}</div>
+      </div>
+      <div class="row py-2">
+        <div class="col-3">Address : </div>
+        <div class="col">{{ user.address.street }}</div>
+      </div>
+      <div class="row py-2">
+        <div class="col-3">Phone : </div>
+        <div class="col">{{ user.phone }}</div>
+      </div>
+  </div>
+</div>
