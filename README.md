@@ -1,6 +1,6 @@
 # social-angular-post
 
-### Usage ###
+## Usage
 * clone repo https://github.com/nuridincs/angular-social-post.git
 * go to directory
 * login with username from this services https://jsonplaceholder.typicode.com/users
