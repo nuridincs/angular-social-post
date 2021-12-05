@@ -1,5 +1,9 @@
 # social-angular-post
 
+## Demo
+
+https://angular-social-post.netlify.app/
+
 ## Usage
 * clone repo https://github.com/nuridincs/angular-social-post.git
 * go to directory
