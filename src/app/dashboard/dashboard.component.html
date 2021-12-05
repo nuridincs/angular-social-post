@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row text-center">
+    <div class="col">Cinta Koding</div>
+    <div class="col underline">Post</div>
+    <div class="col">
+      Welcome, Abit
+    </div>
+  </div>
+  <div class="w-50 m-auto pt-5">
+    <div *ngFor="let data of postsData; index as i">
+      <div class="row">
+        <div *ngIf="data.user[0]" class="col-4">
+          <div class="font-weight-bold">{{ data.user[0].name }}</div>
+        </div>
+        <div class="col">
+          <div class="mb-2">
+            {{ data.post.title }}
+          </div>
+          <div *ngIf="data.comment[0]" class="mb-5">
+            <i class="fa fa-comment-o" aria-hidden="true"></i> &nbsp;
+            <span class="text-primary">{{ data.comment[0].length }}</span>
+            &nbsp;&nbsp;&nbsp;
+            <a href="/detail/" class="text-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

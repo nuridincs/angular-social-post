@@ -1,0 +1,56 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import "~@ng-select/ng-select/themes/material.theme.css";
+
+.banner-sec {
+  background: url(https://static.pexels.com/photos/33972/pexels-photo.jpg)
+    no-repeat left bottom;
+  background-size: cover;
+  min-height: 500px;
+  border-radius: 0 10px 10px 0;
+  padding: 0;
+}
+
+.carousel-inner {
+  border-radius: 0 10px 10px 0;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.btn-login {
+  background: #de6262;
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner-text {
+  width: 70%;
+  position: absolute;
+  bottom: 40px;
+  padding-left: 20px;
+}
+
+.banner-text h2 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner-text h2:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background: #fff;
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.banner-text p {
+  color: #fff;
+}
