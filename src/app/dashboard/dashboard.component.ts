@@ -10,6 +10,10 @@ export class DashboardComponent implements OnInit {
   postsData = [];
   commentData = [];
 
+  // Pagination parameters.
+  p: number = 1;
+  count: number = 5;
+
   constructor(
     private apiService: ApiService
   ) { }
@@ -38,7 +42,7 @@ export class DashboardComponent implements OnInit {
         });
       })
       this.postsData = dataPostWithComment;
-      console.log('~ this.postsData', this.postsData);
+      // console.log('~ this.postsData', this.postsData);
     })
   }
 }

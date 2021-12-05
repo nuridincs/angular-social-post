@@ -18,6 +18,8 @@ import { DetailComponent } from './detail/detail.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './_components/header/header.component';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +39,8 @@ import { HeaderComponent } from './_components/header/header.component';
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
     NgSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
