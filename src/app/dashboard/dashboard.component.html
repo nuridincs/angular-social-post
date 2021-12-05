@@ -1,11 +1,5 @@
 <div class="container mt-5">
-  <div class="row text-center">
-    <div class="col">Cinta Koding</div>
-    <div class="col underline">Post</div>
-    <div class="col">
-      Welcome, Abit
-    </div>
-  </div>
+  <app-header></app-header>
   <div class="w-50 m-auto pt-5">
     <div *ngFor="let data of postsData; index as i">
       <div class="row">
@@ -20,7 +14,7 @@
             <i class="fa fa-comment-o" aria-hidden="true"></i> &nbsp;
             <span class="text-primary">{{ data.comment[0].length }}</span>
             &nbsp;&nbsp;&nbsp;
-            <a href="/detail/" class="text-primary">Detail</a>
+            <a routerLink="/detail/{{ data.post.id }}" class="text-primary">Detail</a>
           </div>
         </div>
       </div>

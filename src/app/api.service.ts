@@ -9,15 +9,19 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getUser(){
+  public getUser() {
     return this.httpClient.get(CONSTANST.routes.users);
   }
 
-  public getPosts(){
+  public getPosts() {
     return this.httpClient.get(CONSTANST.routes.posts);
   }
 
-  public getComments(id: number){
+  public getPostDetail(id: number) {
+    return this.httpClient.get(CONSTANST.routes.postDetail.replace(':id', String(id)));
+  }
+
+  public getComments(id: number) {
     return this.httpClient.get(CONSTANST.routes.comments.replace(':id', String(id)));
   }
 }
