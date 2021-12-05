@@ -54,3 +54,11 @@
 .banner-text p {
   color: #fff;
 }
+
+.login-wrapper {
+  left: 50%;
+  width: 40%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

@@ -1,5 +1,6 @@
+<app-header></app-header>
+
 <div class="container mt-5">
-  <app-header></app-header>
   <div class="w-50 m-auto pt-5">
     <div *ngFor="let data of postsData| paginate: { itemsPerPage: count, currentPage: p }; index as i">
       <div class="row">
@@ -21,7 +22,7 @@
     </div>
 
     <!--Including the pagination control.-->
-    <div class="text-right">
+    <div>
       <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </div>
   </div>
